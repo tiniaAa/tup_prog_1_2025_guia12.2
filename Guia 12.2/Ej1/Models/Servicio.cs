@@ -13,7 +13,8 @@ namespace Ej1.Models
         public string[] nombres = new string[100];
         public int[] tiempoH = new int[100];
         public int[] tiempoM = new int[100];
-        public int contadr = 0;
+        public  int contadr { get; private set; }
+        public Servicio() { contadr = 0; }
         #endregion
 
         public void RegistrarNombre(string nombre)
